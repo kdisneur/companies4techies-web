@@ -1,0 +1,15 @@
+{
+  "name" : "Enten-ITC",
+  "website" : "http://www.enten-itc.ch/",
+  "type" : "saas",
+  "languages" : ["rubyonrails"],
+  "employees" : "between_10_and_50",
+  "remote" : false,
+  "locations" : [
+    {
+      "city" : "Lausanne",
+      "country" : "Switzerland",
+      "coordinates" : {}
+    }
+  ]
+}

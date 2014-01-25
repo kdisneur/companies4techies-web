@@ -1,0 +1,15 @@
+{
+  "name" : "Keycoopt",
+  "languages" : ["rubyonrails", "sass", "jquery", "coffeescript"],
+  "website" : "http://www.keycoopt.com",
+  "employees" : "between_10_and_50",
+  "type" : "saas",
+  "remote" : false,
+  "locations" : [
+    {
+      "city" : "Marq-en-Baroeul",
+      "country" : "France",
+      "coordinates" : {}
+    }
+  ]
+}

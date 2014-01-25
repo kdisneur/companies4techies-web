@@ -1,0 +1,20 @@
+{
+  "name" : "Koolicar",
+  "website" : "http://www.koolicar.com",
+  "type" : "saas",
+  "languages" : ["rubyonrails", "angularjs", "sass"],
+  "employees" : "less_than_10",
+  "remote" : false,
+  "locations" : [
+    {
+      "city" : "Montreal",
+      "country" : "Canada",
+      "coordinates" : {}
+    },
+    {
+      "city" : "Paris",
+      "country" : "France",
+      "coordinates" : {}
+    }
+  ]
+}

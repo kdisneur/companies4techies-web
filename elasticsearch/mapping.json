@@ -1,0 +1,39 @@
+{
+  "settings" : {
+    "number_of_shards" : 1,
+    "analysis" : {
+      "filter" : {
+        "languages_synonym" : {
+          "type" : "synonym",
+          "synonyms_path" : "elasticsearch/synonyms/languages.txt"
+        }
+      },
+      "analyzer" : {
+        "languages_synonyms" : {
+          "tokenizer" : "whitespace",
+          "filter" : ["standard", "lowercase", "stop", "languages_synonym"],
+          "type" : "custom"
+        }
+      }
+    }
+  },
+  "mappings": {
+    "company" : {
+      "properties" : {
+        "name" : { "type" : "string", "store" : "yes" },
+        "logo" : { "type" : "string", "store" : "yes" },
+        "website" : { "type" : "string", "store" : "yes" },
+        "employees" : { "type" : "string", "store" : "yes" },
+        "languages" : { "type" : "string", "store" : "yes", "analyzer" : "languages_synonyms" },
+        "locations" : {
+          "properties" : {
+            "city" : { "type" : "string", "store" : "yes" },
+            "country" : { "type" : "string", "store" : "yes" },
+            "coordinates" : { "type" : "geo_point", "store" : "yes" }
+          }
+        }
+      }
+    }
+  }
+}
+

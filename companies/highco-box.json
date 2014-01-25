@@ -1,0 +1,15 @@
+{
+  "name" : "HighCo Box",
+  "website" : "http://www.highco-box.fr/",
+  "languages" : ["rubyonrails"],
+  "type" : "startup",
+  "remote" : false,
+  "employees" : "between_10_and_50",
+  "locations" : [
+    {
+      "city" : "Paris",
+      "country" : "France",
+      "coordinates" : {}
+    }
+  ]
+}

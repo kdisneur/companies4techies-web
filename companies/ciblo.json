@@ -1,0 +1,15 @@
+{
+  "name" : "Ciblo",
+  "website" : "http://www.ciblo.net/",
+  "type" : "communication",
+  "languages" : ["rubyonrails"],
+  "employees" : "between_10_and_50",
+  "remote" : false,
+  "locations" : [
+    {
+      "city" : "Paris",
+      "country" : "France",
+      "coordinates" : {}
+    }
+  ]
+}

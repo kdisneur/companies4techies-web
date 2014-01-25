@@ -1,0 +1,15 @@
+{
+  "name" : "Tetra informatique",
+  "website" : "http://www.tetra-informatique.com",
+  "languages" : ["openerp", "java", "prestashop"],
+  "employees" : "between_10_and_50",
+  "type" : "saas",
+  "remote" : false,
+  "locations" : [
+    {
+      "city" : "Douai",
+      "country" : "France",
+      "coordinates" : {}
+    }
+  ]
+}

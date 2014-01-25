@@ -1,0 +1,16 @@
+{
+  "name" : "Hospimedia",
+  "logo" : "",
+  "website" : "http://www.hospimedia.fr",
+  "type" : "saas",
+  "remote" : false,
+  "locations" : [
+    {
+      "city" : "Lille",
+      "country" : "France",
+      "coordinates" : { "lat" : 50.6370972, "lon": 3.0578729 }
+    }
+  ],
+  "languages" : ["rubyonrails", "sass", "jquery", "coffeescript"],
+  "employees" : "between_10_and_50"
+}

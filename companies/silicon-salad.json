@@ -1,0 +1,15 @@
+{
+  "name" : "Silicon Salad",
+  "languages" : ["rubyonrails", "sass", "jquery", "coffeescript"],
+  "website" : "http://www.siliconsalad.com",
+  "employees" : "between_10_and_50",
+  "type" : "webagency",
+  "remote" : false,
+  "locations" : [
+    {
+      "city" : "Lille",
+      "country" : "France",
+      "coordinates" : {}
+    }
+  ]
+}
