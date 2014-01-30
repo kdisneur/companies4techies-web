@@ -11,6 +11,6 @@
       "coordinates" : { "lat" : 50.6370972, "lon": 3.0578729 }
     }
   ],
-  "languages" : ["rubyonrails", "sass", "jquery", "coffeescript"],
+  "technologies" : ["rubyonrails", "sass", "jquery", "coffeescript", "git", "mysql", "sphinx"],
   "employees" : "between_10_and_50"
 }

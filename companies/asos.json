@@ -1,0 +1,14 @@
+{
+  "name" : "asos",
+  "website" : "http://www.asos.fr/",
+  "technologies" : [".net", "tfs", "sql server"],
+  "employees" : "betwee_100_and_500",
+  "type" : "ecommerce",
+  "locations" : [
+     {
+       "city" : "Lambersart",
+       "country" : "France",
+       "coordinates" : { "lat" : 50.63335, "lon" : 3.02038 }
+     }
+  ]
+}

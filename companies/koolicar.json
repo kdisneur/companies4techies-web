@@ -2,19 +2,19 @@
   "name" : "Koolicar",
   "website" : "http://www.koolicar.com",
   "type" : "saas",
-  "languages" : ["rubyonrails", "angularjs", "sass"],
+  "technologies" : ["rubyonrails", "angularjs", "sass", "postgresql"],
   "employees" : "less_than_10",
   "remote" : false,
   "locations" : [
     {
       "city" : "Montreal",
       "country" : "Canada",
-      "coordinates" : {}
+      "coordinates" : { "lat" : 45.53378, "lon" : -73.62020 }
     },
     {
       "city" : "Paris",
       "country" : "France",
-      "coordinates" : {}
+      "coordinates" : { "lat" : 48.79568, "lon" : 2.12809 }
     }
   ]
 }

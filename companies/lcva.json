@@ -1,0 +1,14 @@
+{
+  "name" : "LCVA",
+  "website" : "http://www.lcva.fr/",
+  "type" : "website",
+  "technologies" : ["prestashop", "magento", "wordpress"],
+  "employees" : "between_1_and_5",
+   "locations" : [
+     {
+       "city" : "Lambersart",
+       "country" : "France",
+       "coordinates" : { "lat" : 50.63335, "lon" : 3.02038 }
+     }
+   ]
+}

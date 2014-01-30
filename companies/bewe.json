@@ -1,0 +1,14 @@
+{
+  "name" : "bewe",
+  "website" : "http://www.bewe.eu/",
+  "technologies" : [],
+  "employees" : "between_10_and_25",
+  "type" : "business development",
+  "locations" : [
+     {
+       "city" : "Lambersart",
+       "country" : "France",
+       "coordinates" : { "lat" : 50.63335, "lon" : 3.02038 }
+     }
+  ]
+}

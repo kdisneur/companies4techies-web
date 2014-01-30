@@ -1,0 +1,14 @@
+{
+  "name" : "alter way",
+  "website" : "http://www.alterway.fr/",
+  "technologies" : ["symfony", "drupal", "wordpress", "python"],
+  "employees" : "betwee_100_and_500",
+  "type" : "webagency",
+  "locations" : [
+     {
+       "city" : "Lambersart",
+       "country" : "France",
+       "coordinates" : { "lat" : 50.63335, "lon" : 3.02038 }
+     }
+  ]
+}

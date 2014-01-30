@@ -1,0 +1,18 @@
+<div class="m-company" ng-repeat="company in companies">
+  <h2 class="m-company--title">{{company.name}}</h2>
+  <p class="m-company--website-title">website: <a href="{{company.website}}">{{company.website}}</a>
+  <p class="m-company--employees-title">employees: <span class="{{company.employees}}">{{company.employees}}</span></p>
+  <p class="m-company--type-title">type: <span class="{{ company.type }}">{{ company.type }}</span></p>
+  <p class="m-company--technologies-title">technologies:</p>
+  <ul class="m-company--technologies">
+    <li class="m-company--technology" ng-repeat="technology in company.technologies">
+      <a href="#/companies-using-{{technology}}">{{technology}}</a>
+    </li>
+  </ul>
+  <p class="m-cpmpany--locations-title">locations: </p>
+  <ul class="m-company--locations">
+    <li class="m-company--location" ng-repeat="location in company.locations">
+      {{ location.city }}, {{ location.country }}
+    </li>
+  </ul>
+</div>

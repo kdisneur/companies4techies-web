@@ -1,0 +1,28 @@
+{
+  "author": "Kevin <kevin@koboyz.org>",
+  "name": "tekusage",
+  "description": "Open website indexing a maximum number of companies and their technologies. It allows to find all the companies working with thw technologies you love",
+  "version": "0.0.1",
+  "homepage": "http://tekusage.koboyz.org",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:kdisneur/tekusage"
+  },
+  "scripts": {
+    "bootstrap": "./bootstrap.sh",
+    "deploy": "brunch build --production && cd public && git commit -am 'Deploy' && git push && cd ..",
+    "start": "brunch watch --server",
+    "test": "brunch test"
+  },
+  "dependencies": {
+    "auto-reload-brunch": "~ 1.7.1",
+    "javascript-brunch": "~ 1.7.1",
+    "css-brunch": "~ 1.7.0",
+    "hoganjs-brunch": "~ 1.1.1",
+    "uglify-js-brunch": "~ 1.7.6",
+    "clean-css-brunch": "~ 1.7.1",
+    "static-handlebars-brunch": "~ 0.1.5",
+    "sass-brunch": "1.7.1",
+    "after-brunch": "~ 0.0.4"
+  }
+}

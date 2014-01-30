@@ -2,14 +2,14 @@
   "name" : "Ciblo",
   "website" : "http://www.ciblo.net/",
   "type" : "communication",
-  "languages" : ["rubyonrails"],
+  "technologies" : ["rubyonrails"],
   "employees" : "between_10_and_50",
   "remote" : false,
   "locations" : [
     {
       "city" : "Paris",
       "country" : "France",
-      "coordinates" : {}
+      "coordinates" : { "lat": 48.89728, "lon": 2.32281 }
     }
   ]
 }

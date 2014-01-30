@@ -2,14 +2,14 @@
   "name" : "Ecotaco",
   "website" : "http://ecota.co",
   "type" : "saas",
-  "languages" : ["rubyonrails"],
+  "technologies" : ["rubyonrails"],
   "employees" : "between_1_and_5",
   "remote" : false,
   "locations" : [
     {
       "city" : "Lambersart",
       "country" : "France",
-      "coordinates" : {}
+      "coordinates" : { "lat" : 50.63335, "lon" : 3.02038 }
     }
   ]
 }

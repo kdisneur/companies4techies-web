@@ -3,15 +3,15 @@
     "number_of_shards" : 1,
     "analysis" : {
       "filter" : {
-        "languages_synonym" : {
+        "technologies_synonym" : {
           "type" : "synonym",
-          "synonyms_path" : "elasticsearch/synonyms/languages.txt"
+          "synonyms_path" : "elasticsearch/synonyms/technologies.txt"
         }
       },
       "analyzer" : {
-        "languages_synonyms" : {
+        "technologies_synonyms" : {
           "tokenizer" : "whitespace",
-          "filter" : ["standard", "lowercase", "stop", "languages_synonym"],
+          "filter" : ["standard", "lowercase", "stop", "technologies_synonym"],
           "type" : "custom"
         }
       }
@@ -24,13 +24,9 @@
         "logo" : { "type" : "string", "store" : "yes" },
         "website" : { "type" : "string", "store" : "yes" },
         "employees" : { "type" : "string", "store" : "yes" },
-        "languages" : { "type" : "string", "store" : "yes", "analyzer" : "languages_synonyms" },
+        "technologies" : { "type" : "string", "store" : "yes", "analyzer" : "technologies_synonyms" },
         "locations" : {
-          "properties" : {
-            "city" : { "type" : "string", "store" : "yes" },
-            "country" : { "type" : "string", "store" : "yes" },
-            "coordinates" : { "type" : "geo_point", "store" : "yes" }
-          }
+          "type": "nested"
         }
       }
     }

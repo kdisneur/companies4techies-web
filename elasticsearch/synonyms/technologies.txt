@@ -1,0 +1,9 @@
+rails, ror, rubyonrails, ruby on rails, sinatra => ruby
+drupal, magento, prestashop, symfony, wordpress, zend framework => php
+django, openerp, zope => python
+J2EE => java
+angularjs, backbonejs, coffeescript, emberjs, jquery => javascript
+mongodb, couchbase, couchdb => nosql
+c#, sharepoint => .net
+team foundation server = tfs
+

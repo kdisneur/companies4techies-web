@@ -10,3 +10,9 @@ rm ${tgz_name}
 
 elasticsearch/elasticsearch/bin/elasticsearch
 bash load_data.sh
+
+bundle
+rbenv rehash
+npm install -g brunch bower
+bower install
+npm install

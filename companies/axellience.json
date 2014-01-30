@@ -1,0 +1,14 @@
+{
+  "name" : "axellience",
+  "website" : "http://www.axellience.com/",
+  "technologies" : [],
+  "type" : "saas",
+  "employees" : "between_1_and_5",
+  "locations" : [
+     {
+       "city" : "Lambersart",
+       "country" : "France",
+       "coordinates" : { "lat" : 50.63335, "lon" : 3.02038 }
+     }
+  ]
+}

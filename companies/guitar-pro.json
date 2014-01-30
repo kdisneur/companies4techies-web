@@ -1,0 +1,14 @@
+{
+  "name" : "arobas music",
+  "website" : "http://www.guitar-pro.com/",
+  "technologies" : [],
+  "employees" : "between_10_and_25",
+  "type" : "saas",
+  "locations" : [
+     {
+       "city" : "Lambersart",
+       "country" : "France",
+       "coordinates" : { "lat" : 50.63335, "lon" : 3.02038 }
+     }
+  ]
+}

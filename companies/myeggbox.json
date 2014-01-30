@@ -1,0 +1,14 @@
+{
+  "name" : "myeggbox",
+  "website" : "http://www.myeggbox.com/",
+  "type" : "saas",
+  "technologies" : ["rubyonrails"],
+  "employees" : "between_1_and_5",
+  "locations" : [
+     {
+       "city" : "Lambersart",
+       "country" : "France",
+       "coordinates" : { "lat" : 50.63335, "lon" : 3.02038 }
+     }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "name": "tekusage",
+  "version": "0.0.1",
+  "authors": [
+    "Kevin <kevin@koboyz.org>"
+  ],
+  "description": "Open website indexing a maximum number of companies and their technologies. It allows to find all the companies working with thw technologies you love",
+  "license": "MIT",
+  "homepage": "http://tekusage.koboyz.org",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~ 1.2.10",
+    "angular-route": "~ 1.2.10",
+    "elastic.js": "~ 1.1.1",
+    "sass-bootstrap": "~ 3.0.2",
+    "vex": "*",
+    "font-awesome": "~ 4.0.3",
+    "jquery-smooth-scrolling": "~ 1.5.2",
+    "jquery-waypoints": "~ 2.0.3",
+    "modernizr": "~ 2.7.1",
+    "underscore" : "~ 1.5.2"
+  },
+  "overrides": {
+    "font-awesome": {
+      "main": [
+        "fonts/FontAwesome.otf",
+        "fonts/fontawesome-webfont.eot",
+        "fonts/fontawesome-webfont.svg",
+        "fonts/fontawesome-webfont.ttf",
+        "fonts/fontawesome-webfont.woff"
+      ]
+    },
+    "jquery-smooth-scrolling": {
+      "main": "jquery.smoothscroll.js"
+    },
+    "jquery-waypoints": {
+      "main": "waypoints.js"
+    },
+    "modernizr": {
+      "main": "modernizr.js"
+    },
+    "underscore" : {
+      "main" : "underscore.js"
+    },
+    "vex": {
+      "main": [
+        "js/vex.js",
+        "js/vex.dialog.js"
+      ]
+    }
+  }
+}

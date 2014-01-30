@@ -1,0 +1,14 @@
+{
+  "name" : "annva",
+  "website" : "http://www.annva.fr/",
+  "technologies" : [],
+  "employees" : "between_1_and_5",
+  "type" : "saas",
+  "locations" : [
+     {
+       "city" : "Lambersart",
+       "country" : "France",
+       "coordinates" : { "lat" : 50.63335, "lon" : 3.02038 }
+     }
+  ]
+}

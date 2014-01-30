@@ -3,13 +3,13 @@
   "website" : "http://kyan.com",
   "type" : "webagency",
   "employees" : "between_10_and_50",
-  "languages" : ["rubyonrails", "php"],
+  "technologies" : ["rubyonrails", "php"],
   "remote" : false,
   "locations" : [
     {
       "city" : "Guildford",
       "country" : "England",
-      "coordinates" : {}
+      "coordinates" : { "lat" : 51.23622, "lon" : -0.57104 }
     }
   ]
 }

@@ -1,0 +1,14 @@
+{
+  "name" : "stereograph",
+  "website" : "http://www.stereograph.fr/",
+  "type" : "synthetic images agency",
+  "technologies" : [],
+  "employees" : "between_10_and_50",
+  "locations" : [
+     {
+       "city" : "Lambersart",
+       "country" : "France",
+       "coordinates" : { "lat" : 50.63335, "lon" : 3.02038 }
+     }
+  ]
+}

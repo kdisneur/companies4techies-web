@@ -1,0 +1,33 @@
+curl 'http://localhost:9200/tekusage/company/_search?pretty=true' -XPOST -d '{
+    "query": {
+      "filtered": {
+        "query": { "match_all": {} },
+        "filter": {
+          "nested": {
+            "path": "locations",
+            "query": {
+              "filtered": {
+                "query": { "match_all": {} },
+                "filter": {
+                  "bool": {
+                    "must": [
+                      {
+                        "term": {
+                          "locations.country": "France"
+                        }
+                      },
+                      {
+                        "term": {
+                          "locations.city": "Lille"
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }'
