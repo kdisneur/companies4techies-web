@@ -25,9 +25,7 @@
         "website" : { "type" : "string", "store" : "yes" },
         "employees" : { "type" : "string", "store" : "yes" },
         "technologies" : { "type" : "string", "store" : "yes", "analyzer" : "technologies_synonyms" },
-        "locations" : {
-          "type": "nested"
-        }
+        "locations" : { "type" : "nested" }
       }
     }
   }

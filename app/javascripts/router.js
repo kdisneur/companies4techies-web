@@ -6,8 +6,8 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
       queryString: function($route) {
         return {
           'technologies':      $route.current.params.technology,
-          'locations.country': $route.current.params.country,
-          'locations.city':    $route.current.params.city
+          'company.locations.country': $route.current.params.country,
+          'company.locations.city':    $route.current.params.city
         }
       }
     }
