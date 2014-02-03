@@ -8,7 +8,7 @@ unzip kibana-latest.zip
 mv kibana-latest kibana
 mv kibana elasticsearch/.
 rm kibana-latest.zip
-ln -s elasticsearch/kibana-companies-dashboards.json elasticsearch/kibana/app/dashboards/companies.json
+cp elasticsearch/kibana-companies-dashboards.json elasticsearch/kibana/app/dashboards/companies.json
 wget "https://download.elasticsearch.org/elasticsearch/elasticsearch/${tgz_name}"
 tar zxf ${tgz_name}
 mv ${app_name} elasticsearch/elasticsearch
