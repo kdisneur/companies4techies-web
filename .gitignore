@@ -1,4 +1,5 @@
 /bower_components
 /companies.json
 /elasticsearch/elasticsearch
+/elasticsearch/kibana/
 /node_modules
