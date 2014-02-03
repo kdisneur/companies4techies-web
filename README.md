@@ -9,7 +9,7 @@ cd dist
 git checkout gh-pages
 cd ..
 nvm use
-npm run-script bootstrap
+bash bootstrap.sh
 ```
 
 ## Development
