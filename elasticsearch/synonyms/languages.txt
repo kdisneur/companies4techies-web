@@ -1,5 +1,0 @@
-rails, ror, rubyonrails, ruby on rails, sinatra => ruby
-prestashop, symfony, zend framework => php
-django, openerp, zope => python
-J2EE => java
-angularjs, backbonejs, coffeescript, emberjs, jquery => javascript
