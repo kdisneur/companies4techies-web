@@ -3,11 +3,11 @@
   "website" : "http://www.annva.fr/",
   "technologies" : [],
   "employees" : "between_1_and_5",
-  "type" : "saas",
+  "type" : "software",
   "locations" : [
      {
-       "city" : "Lambersart",
-       "country" : "France",
+       "city" : "lille",
+       "country" : "france",
        "coordinates" : { "lat" : 50.63335, "lon" : 3.02038 }
      }
   ]

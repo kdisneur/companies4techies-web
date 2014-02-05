@@ -1,0 +1,23 @@
+{
+  "name" : "ExpertTime",
+  "website" : "http://www.expertime.com/",
+  "technologies" : [".net", "magento"],
+  "type" : ["webagency", "communication"],
+  "locations" : [
+    {
+      "city" : "lille",
+      "country" : "france",
+      "coordinates" : { "lat" : 50.63335, "lon" : 3.02038 }
+    },
+    {
+      "city" : "nantes",
+      "country" : "france",
+      "coordinates" : { "lat" : 47.261624, "lon" : -1.4951765000000705 }
+    },
+    {
+      "city" : "viroflay",
+      "country" : "france",
+      "coordinates" : { "lat" : 48.8041671, "lon" : 2.169518100000005 }
+    }
+  ]
+}

@@ -1,13 +1,13 @@
 {
   "name" : "limpidius",
   "website" : "http://www.limpidius.com",
-  "type" : "saas",
+  "type" : "software",
   "technologies" : ["node.js"],
   "employees" : "between_1_and_5",
    "locations" : [
      {
-       "city" : "Lambersart",
-       "country" : "France",
+       "city" : "lambersart",
+       "country" : "france",
        "coordinates" : { "lat" : 50.63335, "lon" : 3.02038 }
      }
    ]

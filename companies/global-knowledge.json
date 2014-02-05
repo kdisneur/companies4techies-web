@@ -1,0 +1,22 @@
+{
+  "name" : "Global knowledge",
+  "website" : "http://www.globalknowledge.fr",
+  "type" : "training",
+  "locations" : [
+    {
+      "city" : "lille",
+      "country" : "france",
+      "coordinates" : { "lat" : 50.63335, "lon" : 3.02038 }
+    },
+    {
+      "city" : "lyon",
+      "country" : "france",
+      "coordinates" : { "lat" : 45.76423330000001, "lon" : 4.858393799999931 }
+    },
+    {
+      "city" : "rueil malmaison",
+      "country" : "france",
+      "coordinates" : { "lat" : 48.8857399, "lon" : 2.171677700000032 }
+    }
+  ]
+}

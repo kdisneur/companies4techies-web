@@ -1,0 +1,13 @@
+{
+  "name" : "DooApp",
+  "website" : "http://www.dooapp.com/",
+  "employees" : "between_5_and_10",
+  "type" : "software",
+  "locations" : [
+    {
+      "city" : "lille",
+      "country" : "france",
+      "coordinates" : { "lat" : 50.63335, "lon" : 3.02038 }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name" : "Follow the sun",
+  "website" : "http://crm360.fts-services.com/",
+  "type" : "software",
+  "locations" : [
+    {
+      "city" : "lille",
+      "country" : "france",
+      "coordinates" : { "lat" : 50.63335, "lon" : 3.02038 }
+    }
+  ]
+}

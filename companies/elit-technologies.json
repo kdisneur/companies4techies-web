@@ -1,0 +1,13 @@
+{
+  "name" : "Elit technologies",
+  "website" : "http://www.elit-technologies.fr/",
+  "type" : ["network"],
+  "technologies" : ["cisco", "active directory"],
+  "locations" : [
+    {
+      "city" : "asnieres",
+      "country" : "france",
+      "coordinates" : { "lat" : 48.9166301, "lon" : 2.3093767999999955 }
+    }
+  ]
+}

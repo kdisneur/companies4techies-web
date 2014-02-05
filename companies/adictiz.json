@@ -1,13 +1,13 @@
 {
   "name" : "adictiz",
   "website" : "http://www.adictiz.com/",
-  "technologies" : [],
-  "employees" : "between_10_and_25",
-  "type" : "social gaming",
+  "technologies" : ["ios", "php"],
+  "employees" : "between_10_and_20",
+  "type" : "social_gaming",
   "locations" : [
      {
-       "city" : "Lambersart",
-       "country" : "France",
+       "city" : "lille",
+       "country" : "france",
        "coordinates" : { "lat" : 50.63335, "lon" : 3.02038 }
      }
   ]

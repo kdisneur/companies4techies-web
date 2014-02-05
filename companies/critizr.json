@@ -1,9 +1,9 @@
 {
-  "name" : "Fitizzy",
-  "website" : "http://fitizzy.com/",
+  "name" : "critizr",
+  "website" : "http://critizr.com/",
+  "technologies" : ["rubyonrails"],
+  "employees" : "between_5_and_10",
   "type" : "software_as_a_service",
-  "technologies" : ["php", "git", "mysql", "mongodb", "jquery"],
-  "employees" : "between_1_and_5",
   "locations" : [
     {
       "city" : "lille",

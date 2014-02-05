@@ -3,11 +3,11 @@
   "website" : "http://www.adibox.com/",
   "technologies" : ["php", "mysql", "jquery"],
   "employees" : "between_1_and_5",
-  "type" : "saas",
+  "type" : "software_as_a_service",
   "locations" : [
      {
-       "city" : "Lambersart",
-       "country" : "France",
+       "city" : "lille",
+       "country" : "france",
        "coordinates" : { "lat" : 50.63335, "lon" : 3.02038 }
      }
   ]

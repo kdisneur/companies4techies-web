@@ -1,10 +1,9 @@
 {
-  "name" : "Ecotaco",
-  "website" : "http://ecota.co",
-  "type" : "software_as_a_service",
+  "name" : "crezeo",
+  "website" : "http://www.crezeo.com/",
   "technologies" : ["rubyonrails"],
-  "employees" : "between_1_and_5",
-  "remote" : false,
+  "employees" : "between_5_and_10",
+  "type" : "software",
   "locations" : [
     {
       "city" : "lille",

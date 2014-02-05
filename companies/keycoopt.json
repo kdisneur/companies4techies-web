@@ -2,13 +2,14 @@
   "name" : "Keycoopt",
   "technologies" : ["rubyonrails", "sass", "jquery", "coffeescript", "git", "elasticsearch"],
   "website" : "http://www.keycoopt.com",
-  "employees" : "between_10_and_50",
-  "type" : "saas",
-  "remote" : false,
+  "employees" : "between_20_and_50",
+  "type" : "software_as_a_service",
+  "remote" : true,
+  "part_time" : false,
   "locations" : [
     {
-      "city" : "Marq-en-Baroeul",
-      "country" : "France",
+      "city" : "marcq-en-baroeul",
+      "country" : "france",
       "coordinates" : { "lat" : 50.68530, "lon" : 3.11549 }
     }
   ]

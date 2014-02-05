@@ -1,0 +1,13 @@
+{
+  "name" : "Colis Web",
+  "website" : "http://www.colisweb.com/",
+  "technologies" : ["magento", "prestashop"],
+  "type" : "service",
+  "locations" : [
+    {
+      "city" : "lille",
+      "country" : "france",
+      "coordinates" : { "lat" : 50.63335, "lon" : 3.02038 }
+    }
+  ]
+}

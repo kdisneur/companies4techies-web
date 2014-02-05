@@ -2,13 +2,13 @@
   "name" : "Tetra informatique",
   "website" : "http://www.tetra-informatique.com",
   "technologies" : ["openerp", "java", "prestashop"],
-  "employees" : "between_10_and_50",
-  "type" : "saas",
+  "employees" : "between_20_and_50",
+  "type" : "software",
   "remote" : false,
   "locations" : [
     {
-      "city" : "Douai",
-      "country" : "France",
+      "city" : "douai",
+      "country" : "france",
       "coordinates" : { "lat" : 50.36535, "lon" : 3.08613 }
     }
   ]

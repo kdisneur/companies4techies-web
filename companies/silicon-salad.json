@@ -2,13 +2,15 @@
   "name" : "Silicon Salad",
   "technologies" : ["rubyonrails", "sass", "jquery", "coffeescript", "elasticsearch", "mysql"],
   "website" : "http://www.siliconsalad.com",
-  "employees" : "between_10_and_50",
+  "employees" : "between_10_and_20",
   "type" : "webagency",
   "remote" : false,
+  "part_time": false,
+  "freelance": true,
   "locations" : [
     {
-      "city" : "Lille",
-      "country" : "France",
+      "city" : "lille",
+      "country" : "france",
       "coordinates" : { "lat" : 50.64771, "lon" : 3.05844 }
     }
   ]

@@ -232,8 +232,8 @@
       "notice": false
     },
     {
-      "title": "Countries",
-      "height": "600px",
+      "title": "Hits",
+      "height": "150px",
       "editable": true,
       "collapse": false,
       "collapsable": true,
@@ -242,19 +242,43 @@
           "error": false,
           "span": 12,
           "editable": true,
-          "type": "bettermap",
+          "type": "table",
           "loadingEditor": false,
-          "field": "locations",
-          "size": 1000,
+          "size": 50,
+          "pages": 5,
+          "offset": 0,
+          "sort": [
+            "_score",
+            "desc"
+          ],
+          "overflow": "min-height",
+          "fields": [
+            "name",
+            "type",
+            "technologies",
+            "employees"
+          ],
+          "highlight": [],
+          "sortable": true,
+          "header": true,
+          "paging": true,
+          "field_list": true,
+          "all_fields": false,
+          "trimFactor": 300,
+          "localTime": false,
+          "timeField": "@timestamp",
           "spyable": true,
-          "tooltip": "coordinates",
           "queries": {
             "mode": "all",
             "ids": [
               0
             ]
           },
-          "title": "Locations"
+          "style": {
+            "font-size": "10pt"
+          },
+          "normTimes": true,
+          "title": "Hits"
         }
       ],
       "notice": false

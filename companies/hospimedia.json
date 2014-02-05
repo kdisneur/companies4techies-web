@@ -1,16 +1,17 @@
 {
   "name" : "Hospimedia",
-  "logo" : "",
   "website" : "http://www.hospimedia.fr",
-  "type" : "saas",
+  "type" : "software_as_a_service",
   "remote" : false,
+  "part_time": false,
+  "freelance": true,
   "locations" : [
     {
-      "city" : "Lille",
-      "country" : "France",
+      "city" : "lille",
+      "country" : "france",
       "coordinates" : { "lat" : 50.6370972, "lon": 3.0578729 }
     }
   ],
   "technologies" : ["rubyonrails", "sass", "jquery", "coffeescript", "git", "mysql", "sphinx"],
-  "employees" : "between_10_and_50"
+  "employees" : "between_20_and_50"
 }
