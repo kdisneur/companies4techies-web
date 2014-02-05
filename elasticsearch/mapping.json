@@ -25,6 +25,10 @@
         "website" : { "type" : "string", "store" : "yes" },
         "employees" : { "type" : "string", "store" : "yes" },
         "technologies" : { "type" : "string", "store" : "yes", "analyzer" : "technologies_synonyms" },
+        "freelance": { "type" : "boolean", "store" : "yes" },
+        "remote": { "type" : "boolean", "store" : "yes" },
+        "part_time": { "type" : "boolean", "store" : "yes" },
+        "type": { "type" : "string", "store" : "yes" },
         "locations" : {
           "type" : "nested",
           "properties" : {
