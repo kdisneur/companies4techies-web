@@ -3,6 +3,7 @@
   "website" : "http://www.dooapp.com/",
   "employees" : "between_5_and_10",
   "type" : "software",
+  "created_at": "2014/02/05",
   "locations" : [
     {
       "city" : "lille",

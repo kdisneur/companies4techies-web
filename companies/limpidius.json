@@ -4,11 +4,12 @@
   "type" : "software",
   "technologies" : ["node.js"],
   "employees" : "between_1_and_5",
-   "locations" : [
-     {
-       "city" : "lambersart",
-       "country" : "france",
-       "coordinates" : { "lat" : 50.63335, "lon" : 3.02038 }
-     }
-   ]
+  "created_at": "2014/02/01",
+  "locations" : [
+    {
+      "city" : "lambersart",
+      "country" : "france",
+      "coordinates" : { "lat" : 50.63335, "lon" : 3.02038 }
+    }
+  ]
 }

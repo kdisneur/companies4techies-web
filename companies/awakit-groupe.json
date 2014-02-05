@@ -4,6 +4,7 @@
   "technologies" : [],
   "employees" : "between_10_and_25",
   "type" : "communication agency",
+  "created_at": "2014/02/01",
   "locations" : [
     {
       "city" : "Lambersart",

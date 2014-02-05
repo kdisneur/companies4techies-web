@@ -4,11 +4,12 @@
   "type" : "webagency",
   "technologies" : ["prestashop", "magento", "wordpress"],
   "employees" : "less_than_5",
-   "locations" : [
-     {
-       "city" : "lambersart",
-       "country" : "france",
-       "coordinates" : { "lat" : 50.63335, "lon" : 3.02038 }
-     }
-   ]
+  "created_at": "2014/02/01",
+  "locations" : [
+    {
+      "city" : "lambersart",
+      "country" : "france",
+      "coordinates" : { "lat" : 50.63335, "lon" : 3.02038 }
+    }
+  ]
 }

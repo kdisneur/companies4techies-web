@@ -29,6 +29,7 @@
         "remote": { "type" : "boolean", "store" : "yes" },
         "part_time": { "type" : "boolean", "store" : "yes" },
         "type": { "type" : "string", "store" : "yes" },
+        "created_at": { "type" : "date", "store" : "yes", "format": "YYYY/MM/dd" },
         "locations" : {
           "type" : "nested",
           "properties" : {

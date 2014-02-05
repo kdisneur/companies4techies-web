@@ -3,6 +3,7 @@
   "website" : "http://www.expertime.com/",
   "technologies" : [".net", "magento"],
   "type" : ["webagency", "communication"],
+  "created_at": "2014/02/05",
   "locations" : [
     {
       "city" : "lille",

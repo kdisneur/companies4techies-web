@@ -5,6 +5,7 @@
   "remote" : false,
   "part_time": false,
   "freelance": true,
+  "created_at": "2014/02/01",
   "locations" : [
     {
       "city" : "lille",

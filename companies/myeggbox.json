@@ -4,6 +4,7 @@
   "type" : "software_as_a_service",
   "technologies" : ["rubyonrails"],
   "employees" : "less_than_5",
+  "created_at": "2014/02/05",
   "locations" : [
      {
        "city" : "lambersart",

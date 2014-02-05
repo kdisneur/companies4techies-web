@@ -5,6 +5,7 @@
   "type" : "software",
   "remote" : false,
   "employees" : "between_10_and_50",
+  "created_at": "2014/02/01",
   "locations" : [
     {
       "city" : "paris",

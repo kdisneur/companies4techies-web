@@ -4,6 +4,7 @@
   "technologies" : ["symfony", "drupal", "wordpress", "python"],
   "employees" : "betwee_100_and_500",
   "type" : "webagency",
+  "created_at": "2014/02/01",
   "locations" : [
      {
        "city" : "lille",

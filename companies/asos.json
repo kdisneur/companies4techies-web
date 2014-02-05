@@ -4,6 +4,7 @@
   "technologies" : [".net", "tfs", "sql server"],
   "employees" : "more_than_100",
   "type" : "ecommerce",
+  "created_at": "2014/02/01",
   "locations" : [
      {
        "city" : "lille",

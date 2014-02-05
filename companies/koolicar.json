@@ -6,6 +6,7 @@
   "employees" : "between_5_and_10",
   "remote" : false,
   "part_time" : false,
+  "created_at": "2014/02/01",
   "locations" : [
     {
       "city" : "montreal",

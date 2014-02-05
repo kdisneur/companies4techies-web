@@ -227,6 +227,80 @@
           "tstat": "total",
           "valuefield": "",
           "title": "Freelance"
+        },
+        {
+          "span": 6,
+          "editable": true,
+          "type": "histogram",
+          "loadingEditor": false,
+          "mode": "count",
+          "time_field": "created_at",
+          "value_field": null,
+          "x-axis": true,
+          "y-axis": true,
+          "scale": 1,
+          "y_format": "short",
+          "grid": {
+            "max": null,
+            "min": 0
+          },
+          "queries": {
+            "mode": "all",
+            "ids": [
+              0
+            ]
+          },
+          "annotate": {
+            "enable": false,
+            "query": "*",
+            "size": 20,
+            "field": "_type",
+            "sort": [
+              "_score",
+              "desc"
+            ]
+          },
+          "auto_int": false,
+          "resolution": 100,
+          "interval": "1d",
+          "intervals": [
+            "auto",
+            "1s",
+            "1m",
+            "5m",
+            "10m",
+            "30m",
+            "1h",
+            "3h",
+            "12h",
+            "1d",
+            "1w",
+            "1y"
+          ],
+          "lines": true,
+          "fill": 0,
+          "linewidth": 3,
+          "points": false,
+          "pointradius": 5,
+          "bars": false,
+          "stack": true,
+          "spyable": true,
+          "zoomlinks": true,
+          "options": true,
+          "legend": true,
+          "show_query": true,
+          "interactive": true,
+          "legend_counts": true,
+          "timezone": "utc",
+          "percentage": false,
+          "zerofill": true,
+          "derivative": false,
+          "tooltip": {
+            "value_type": "cumulative",
+            "query_as_alias": true
+          },
+          "title": "companies count",
+          "scaleSeconds": false
         }
       ],
       "notice": false
@@ -292,7 +366,7 @@
     "default": "_all",
     "warm_fields": false
   },
-  "style": "dark",
+  "style": "light",
   "panel_hints": true,
   "pulldowns": [
     {
@@ -356,7 +430,7 @@
     "load_gist": false,
     "load_elasticsearch": true,
     "load_elasticsearch_size": 20,
-    "load_local": false,
+    "load_local": true,
     "hide": false
   },
   "refresh": false

@@ -3,6 +3,7 @@
 Available company properties:
 
 * name (string required)
+* created_at (date required. when the company is added in the app)
 * logo (url)
 * website (url)
 * type (array of string included in: `webagency`, `service`, `consulting`, `synthetic_images_agency`, `ecommerce`, `software`, `software_as_a_service`, `platform_as_a_service`, `communication`, `marketing`, `social_gaming`. The list can growth if needed but don't forget to update this file)
