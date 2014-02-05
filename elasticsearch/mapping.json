@@ -25,7 +25,14 @@
         "website" : { "type" : "string", "store" : "yes" },
         "employees" : { "type" : "string", "store" : "yes" },
         "technologies" : { "type" : "string", "store" : "yes", "analyzer" : "technologies_synonyms" },
-        "locations" : { "type" : "nested" }
+        "locations" : {
+          "type" : "nested",
+          "properties" : {
+            "city" : { "type" : "string", "store" : "yes" },
+            "country" : { "type" : "string", "store" : "yes" },
+            "coordinates" : { "type" : "geo_point", "store" : "yes" }
+          }
+        }
       }
     }
   }

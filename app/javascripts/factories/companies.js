@@ -1,7 +1,7 @@
 CompanyFinder = function() {
   var computeLocationTerms = function(memo, value, field) {
-    object = { match: {} };
-    object['locations.' + field] = value;
+    object = { term: {} };
+    object['term']['locations.' + field] = value;
     memo.push(object);
     return memo;
   };
@@ -14,7 +14,7 @@ CompanyFinder = function() {
   };
 
   var locationQuery = function(queryString) {
-    if (!!queryString) return {};
+    if (!queryString) return {};
 
     return {
       filter: {
@@ -32,17 +32,21 @@ CompanyFinder = function() {
 
   var normalQuery = function(queryString) {
     return {
-      filtered: { query: _.reduce(queryString, computeTerms, []) }
+      query: {
+        bool: {
+          must: _.reduce(queryString, computeTerms, [])
+        }
+      }
     };
   };
 
   var query = function(queryString) {
     if (queryString == null) return { match_all: {} };
-    return _.extend({}, normalQuery(queryString), locationQuery(queryString['locations']));
+    return { filtered: _.extend({}, normalQuery(queryString.main), locationQuery(queryString.locations))};
   };
 
   return {
-    host:    '192.168.1.51:9200',
+    host:    '192.168.0.39:9200',
     indices: 'tekusage',
     types:   'company',
     search: function(queryString, callback) {

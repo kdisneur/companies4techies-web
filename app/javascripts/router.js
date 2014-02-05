@@ -5,9 +5,13 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
     resolve:     {
       queryString: function($route) {
         return {
-          'technologies':      $route.current.params.technology,
-          'company.locations.country': $route.current.params.country,
-          'company.locations.city':    $route.current.params.city
+          main: {
+            technologies: $route.current.params.technology
+          },
+          locations: {
+            country: $route.current.params.country,
+            city:    $route.current.params.city
+          }
         }
       }
     }
@@ -18,7 +22,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
     controller:  CompaniesListController,
     resolve:     {
       queryString: function($route) {
-        return { 'technologies': $route.current.params.technology };
+        return { main: { technologies: $route.current.params.technology }};
       }
     }
   });

@@ -31,8 +31,8 @@ CompaniesListController.$inject = ['$scope', 'Company', 'queryString'];
 
 ;CompanyFinder = function() {
   var computeLocationTerms = function(memo, value, field) {
-    object = { match: {} };
-    object['locations.' + field] = value;
+    object = { term: {} };
+    object['term']['locations.' + field] = value;
     memo.push(object);
     return memo;
   };
@@ -45,7 +45,7 @@ CompaniesListController.$inject = ['$scope', 'Company', 'queryString'];
   };
 
   var locationQuery = function(queryString) {
-    if (!!queryString) return {};
+    if (!queryString) return {};
 
     return {
       filter: {
@@ -63,17 +63,21 @@ CompaniesListController.$inject = ['$scope', 'Company', 'queryString'];
 
   var normalQuery = function(queryString) {
     return {
-      filtered: { query: _.reduce(queryString, computeTerms, []) }
+      query: {
+        bool: {
+          must: _.reduce(queryString, computeTerms, [])
+        }
+      }
     };
   };
 
   var query = function(queryString) {
     if (queryString == null) return { match_all: {} };
-    return _.extend({}, normalQuery(queryString), locationQuery(queryString['locations']));
+    return { filtered: _.extend({}, normalQuery(queryString.main), locationQuery(queryString.locations))};
   };
 
   return {
-    host:    '192.168.1.51:9200',
+    host:    '192.168.0.39:9200',
     indices: 'tekusage',
     types:   'company',
     search: function(queryString, callback) {
@@ -97,9 +101,13 @@ app.factory('Company', CompanyFinder);
     resolve:     {
       queryString: function($route) {
         return {
-          'technologies':      $route.current.params.technology,
-          'company.locations.country': $route.current.params.country,
-          'company.locations.city':    $route.current.params.city
+          main: {
+            technologies: $route.current.params.technology
+          },
+          locations: {
+            country: $route.current.params.country,
+            city:    $route.current.params.city
+          }
         }
       }
     }
@@ -110,7 +118,7 @@ app.factory('Company', CompanyFinder);
     controller:  CompaniesListController,
     resolve:     {
       queryString: function($route) {
-        return { 'technologies': $route.current.params.technology };
+        return { main: { technologies: $route.current.params.technology }};
       }
     }
   });
