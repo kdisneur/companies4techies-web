@@ -36,5 +36,15 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
     }
   });
 
-  $routeProvider.otherwise({ redirectTo: '/companies' });
+
+  $routeProvider.when('/', {
+    templateUrl: 'partials/home/index.html',
+    controller:  HomeController
+  });
+
+  $routeProvider.when('/404', {
+    templateUrl: 'partials/404.html'
+  });
+
+  $routeProvider.otherwise({ templateUrl: 'partials/404.html' });
 }]);
