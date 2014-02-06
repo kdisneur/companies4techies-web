@@ -23,6 +23,7 @@
     "clean-css-brunch": "~ 1.7.1",
     "static-handlebars-brunch": "~ 0.1.5",
     "sass-brunch": "1.7.1",
-    "after-brunch": "~ 0.0.4"
+    "after-brunch": "~ 0.0.4",
+    "process-env-brunch": "*"
   }
 }

@@ -46,7 +46,7 @@ CompanyFinder = function() {
   };
 
   return {
-    host:    '192.168.0.39:9200',
+    host:    $PROCESS_ENV_ELASTICSEARCH_HOST,
     indices: 'tekusage',
     types:   'company',
     search: function(queryString, callback) {
