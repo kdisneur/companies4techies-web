@@ -15,11 +15,11 @@ bash bootstrap.sh
 ## Development
 
 ```shell
-npm start
+ELASTICSEARCH_HOST=xxx.xxx.xxx.xxx:9200 npm start
 ```
 
 ## Production
 
 ```shell
-npm run-script deploy
+ELASTICSEARCH_HOST=xxx.xxx.xxx.xxx:9200 npm run-script deploy
 ```
