@@ -1,4 +1,5 @@
 app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
+  $locationProvider.html5Mode(false).hashPrefix('!');
   $routeProvider.when('/companies-using-:technology-in-:city,:country', {
     templateUrl: 'partials/companies/list.html',
     controller:  CompaniesListController,
