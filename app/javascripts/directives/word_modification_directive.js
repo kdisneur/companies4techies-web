@@ -5,7 +5,10 @@ WordModificationDirective = function(WordModificationService) {
     link: function(scope, element, attrs) {
       var updateWord = function() {
         word_list = scope.$eval(attrs.wordModification);
-        scope.wordModification = word_list[_.random(0, (word_list.length - 1))];
+        first     = word_list.shift();
+        word_list.push(first);
+
+        scope.wordModification = first;
       }
       WordModificationService.onWordModification(scope, updateWord);
       updateWord();

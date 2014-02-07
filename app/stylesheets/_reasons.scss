@@ -1,0 +1,29 @@
+.m-reasons--title {
+  font-size:    2em;
+  font-variant: small-caps;
+  margin-top:   2em;
+  text-align:   center;
+}
+
+.m-reasons {
+  @include grid-row();
+  @extend .text-center;
+}
+
+.m-reason {
+  @include border-radius(50%);
+  @include grid-column(4);
+  background:      $secondary-background;
+  font-size:       0.8em;
+  list-style-type: none;
+  margin:          40px;
+  height:          220px;
+  text-align:      center;
+  width:           222px;
+
+  i {
+    color:     $primary-color;
+    font-size: 2.5em;
+    margin:    0.8em;
+  }
+}

@@ -19,9 +19,10 @@
     "angular-route": "~ 1.2.10",
     "elastic.js": "~ 1.1.1",
     "sass-bootstrap": "~ 3.0.2",
-    "vex": "*",
+    "vex": "~ 2.0.1",
     "font-awesome": "~ 4.0.3",
     "jquery-smooth-scrolling": "~ 1.5.2",
+    "foundation": "~ 5.1.0",
     "jquery-waypoints": "~ 2.0.3",
     "modernizr": "~ 2.7.1",
     "underscore" : "~ 1.5.2"
@@ -38,6 +39,9 @@
     },
     "jquery-smooth-scrolling": {
       "main": "jquery.smoothscroll.js"
+    },
+    "jquery-placeholder": {
+      "main": "jquery.placeholder.js"
     },
     "jquery-waypoints": {
       "main": "waypoints.js"
