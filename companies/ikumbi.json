@@ -1,0 +1,25 @@
+{
+  "name" : "Ikumbi",
+  "website" : "http://www.ikumbi-solutions.com/",
+  "employees" : "between_5_and_10",
+  "type" : "consulting",
+  "technologies" : ["prestashop"],
+  "created_at" : "2014/02/07",
+  "locations" : [
+    {
+    	"city" : "lille",
+    	"country" : "france",
+    	"coordinates" : { "lat" : 50.6333542, "lon" : 3.020376599999963 }
+    },
+    {
+    	"city" : "nantes",
+    	"country" : "france",
+    	"coordinates" : { "lat" : 47.2055867, "lon" : -1.5616310999999996 }
+    },
+    {
+    	"city" : "paris",
+    	"country" : "france",
+    	"coordinates" : { "lat" : 48.827816, "lon" : 2.2706201999999394 }
+    }
+  ]
+}
