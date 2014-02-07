@@ -1,0 +1,20 @@
+{
+  "name" : "Groupe adaming",
+  "website" : "http://www.adaming.fr/",
+  "employees" : "more_than_100",
+  "type" : "consulting",
+  "technologies" : ["java", ".net", "oracle", "php"],
+  "created_at" : "2014/02/07",
+  "locations" : [
+    {
+    	"city" : "lille",
+    	"country" : "france",
+    	"coordinates" : { "lat" : 50.6333542, "lon" : 3.020376599999963 }
+    },
+    {
+    	"city" : "paris",
+    	"country" : "france",
+    	"coordinates" : { "lat" : 48.842011, "lon" : 2.321817499999952 }
+    }
+  ]
+}
