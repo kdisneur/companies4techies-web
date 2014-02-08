@@ -26,6 +26,8 @@ exports.config =
           'app/javascripts/controllers/*.js'
           'app/javascripts/services/*.js'
           'app/javascripts/app.js'
+          'app/javascripts/config/translations/*.js'
+          'app/javascripts/config/*.js'
         ]
     stylesheets:
       joinTo:
