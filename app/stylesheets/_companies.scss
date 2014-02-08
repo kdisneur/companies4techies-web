@@ -1,0 +1,35 @@
+@mixin company-information($information-name) {
+  .m-company--#{$information-name}--title {
+    @include grid-column(1);
+    font-size: 1em;
+  }
+
+  .m-company--#{$information-name} {
+    @include grid-column(11);
+    margin-left: 0;
+  }
+}
+
+.m-companies {
+  @include grid-row();
+}
+
+.m-company {
+  @include grid-column(6);
+  @include panel($bg: $secondary-background);
+  @include company-information(employees);
+  @include company-information(locations);
+  @include company-information(technologies);
+  @include company-information(type);
+}
+
+.m-company--title {
+  font-variant: small-caps;
+}
+
+.m-company--technology {
+  display:      inline-block;
+  margin-right: 0.3em;
+  &::After { content: '-'}
+  &:last-child::After { content: ''; }
+}

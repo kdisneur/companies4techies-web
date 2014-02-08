@@ -10,6 +10,12 @@ HomeController = function($scope, Company) {
     template_name = ($scope.companies && $scope.companies.length > 0) ? 'companies' : 'empty'
     return 'partials/companies/' + template_name + '.html';
   };
+
+  var init = function() {
+    new WOW().init();
+  };
+
+  init();
 };
 
 HomeController.$inject = ['$scope', 'Company'];
