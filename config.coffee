@@ -1,3 +1,5 @@
+require('dotenv').load()
+
 exports.config =
   modules:
     definition: false
