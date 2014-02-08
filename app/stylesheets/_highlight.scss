@@ -1,0 +1,17 @@
+.m-highlight {
+  @include grid-row();
+  margin-top: 3em;
+}
+
+.m-highlight--explanation {
+  @include grid-column(12);
+  @extend .text-center;
+  font-size:   2.5em;
+  font-weight: bold;
+}
+
+.m-highlight--technology {
+  color:   $primary-color;
+  display: inline-block;
+  width:   150px;
+}

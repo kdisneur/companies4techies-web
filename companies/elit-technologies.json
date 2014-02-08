@@ -1,7 +1,7 @@
 {
   "name" : "Elit technologies",
   "website" : "http://www.elit-technologies.fr/",
-  "type" : ["network"],
+  "types" : ["network"],
   "technologies" : ["cisco", "active directory"],
   "created_at": "2014/02/05",
   "locations" : [

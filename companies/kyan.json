@@ -1,7 +1,7 @@
 {
   "name" : "Kyan",
   "website" : "http://kyan.com",
-  "type" : "webagency",
+  "types" : ["webagency"],
   "employees" : "between_20_and_50",
   "technologies" : ["rubyonrails", "php"],
   "remote" : false,

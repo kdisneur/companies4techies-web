@@ -1,0 +1,15 @@
+.m-fullsearch {
+  @include grid-row();
+}
+
+.m-fullsearch--form {
+  @include grid-row(collapse);
+}
+
+.m-fullsearch--field {
+  @include grid-column($columns: 8, $offset: 1, $collapse: true);
+}
+
+.m-fullsearch--button {
+  @include grid-column($columns: 2, $collapse: true);
+}

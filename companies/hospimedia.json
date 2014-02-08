@@ -1,7 +1,7 @@
 {
   "name" : "Hospimedia",
   "website" : "http://www.hospimedia.fr",
-  "type" : "software_as_a_service",
+  "types" : ["software_as_a_service"],
   "remote" : false,
   "part_time": false,
   "freelance": true,

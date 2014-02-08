@@ -1,7 +1,7 @@
 {
   "name" : "Ecotaco",
   "website" : "http://ecota.co",
-  "type" : "software_as_a_service",
+  "types" : ["software_as_a_service"],
   "technologies" : ["rubyonrails"],
   "employees" : "between_1_and_5",
   "remote" : false,

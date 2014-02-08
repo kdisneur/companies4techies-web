@@ -1,0 +1,36 @@
+<div class="m-highlight">
+  <p class="m-highlight--explanation">
+    Find the <span word-modification="technologies" class="m-highlight--technology"></span> company of your dreams.
+  </p>
+</div>
+<div class="m-fullsearch">
+  <div class="m-fullsearch--field">
+    <input type="text" >
+  </div>
+  <div class="m-fullsearch--button">
+    <a href="#" class="button postfix">search</a>
+  </div>
+</div>
+<div class="m-reasons-wrapper">
+  <h2 class="m-reasons--title">Why use Tekusage?</h2>
+  <ul class="m-reasons">
+    <li class="m-reason wow fadeInDown">
+      <i class="fa fa-globe"></i>
+      <p> You can find companies using your preferred technologies around the world.</p>.
+    </li>
+    <li class="m-reason wow fadeInDown">
+      <i class="fa fa-location-arrow"></i>
+      <p>Pick the companies that matches your criterias and contact them directly.</p>.
+    </li>
+    <li class="m-reason wow fadeInDown">
+      <i class="fa fa-github"></i>
+      <p>
+        All the website and the companies database is open source
+        and available on <a href="https://github.com/kdisneur/tekusage">Github</a>
+      </p>.
+    </li>
+  </ul>
+</div>
+<div class="m-companies">
+  <div ng-include="companiesPartialName()" data-equalizer></div>
+</div>

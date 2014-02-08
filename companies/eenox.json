@@ -1,7 +1,7 @@
 {
   "name" : "Eenox",
   "website" : "http://eenox.net/",
-  "type" : ["webagency", "software_as_a_service"],
+  "types" : ["webagency", "software_as_a_service"],
   "created_at": "2014/02/05",
   "locations" : [
     {

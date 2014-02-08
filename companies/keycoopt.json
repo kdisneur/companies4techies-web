@@ -3,7 +3,7 @@
   "technologies" : ["rubyonrails", "sass", "jquery", "coffeescript", "git", "elasticsearch"],
   "website" : "http://www.keycoopt.com",
   "employees" : "between_20_and_50",
-  "type" : "software_as_a_service",
+  "types" : ["software_as_a_service"],
   "remote" : true,
   "part_time" : false,
   "created_at": "2014/02/01",

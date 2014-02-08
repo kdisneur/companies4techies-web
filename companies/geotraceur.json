@@ -1,7 +1,7 @@
 {
   "name" : "Geotraceur",
   "website" : "http://www.geotraceur.fr",
-  "type" : "ecommerce",
+  "types" : ["ecommerce"],
   "created_at": "2014/02/01",
   "locations" : [
     {

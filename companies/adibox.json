@@ -3,7 +3,7 @@
   "website" : "http://www.adibox.com/",
   "technologies" : ["php", "mysql", "jquery"],
   "employees" : "between_1_and_5",
-  "type" : "software_as_a_service",
+  "types" : ["software_as_a_service"],
   "created_at": "2014/02/01",
   "locations" : [
      {

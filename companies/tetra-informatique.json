@@ -3,7 +3,7 @@
   "website" : "http://www.tetra-informatique.com",
   "technologies" : ["openerp", "java", "prestashop"],
   "employees" : "between_20_and_50",
-  "type" : "software",
+  "types" : ["software"],
   "remote" : false,
   "created_at": "2014/02/05",
   "locations" : [

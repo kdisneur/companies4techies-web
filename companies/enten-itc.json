@@ -1,7 +1,7 @@
 {
   "name" : "Enten-ITC",
   "website" : "http://www.enten-itc.ch/",
-  "type" : "saas",
+  "types" : ["saas"],
   "technologies" : ["rubyonrails"],
   "employees" : "between_10_and_50",
   "remote" : false,

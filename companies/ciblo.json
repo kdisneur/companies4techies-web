@@ -1,7 +1,7 @@
 {
   "name" : "Ciblo",
   "website" : "http://www.ciblo.net/",
-  "type" : "communication",
+  "types" : ["communication"],
   "technologies" : ["rubyonrails"],
   "employees" : "between_20_and_50",
   "remote" : false,
