@@ -1,7 +1,7 @@
 {
   "name" : "Global knowledge",
   "website" : "http://www.globalknowledge.fr",
-  "type" : "training",
+  "types" : ["training"],
   "created_at": "2014/02/01",
   "locations" : [
     {

@@ -1,7 +1,7 @@
 {
   "name" : "Follow the sun",
   "website" : "http://crm360.fts-services.com/",
-  "type" : "software",
+  "types" : ["software"],
   "created_at": "2014/02/05",
   "locations" : [
     {

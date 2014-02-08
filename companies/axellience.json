@@ -2,7 +2,7 @@
   "name" : "axellience",
   "website" : "http://www.axellience.com/",
   "technologies" : [],
-  "type" : "software_as_a_service",
+  "types" : ["software_as_a_service"],
   "employees" : "between_1_and_5",
   "created_at": "2014/02/01",
   "locations" : [

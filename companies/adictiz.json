@@ -3,7 +3,7 @@
   "website" : "http://www.adictiz.com/",
   "technologies" : ["ios", "php"],
   "employees" : "between_10_and_20",
-  "type" : "social_gaming",
+  "types" : ["social_gaming"],
   "created_at": "2014/02/01",
   "locations" : [
      {

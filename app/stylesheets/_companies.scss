@@ -1,0 +1,62 @@
+@mixin company-information($information-name, $children-names: null) {
+  .m-company--#{$information-name}--title {
+    @include grid-column(2);
+    font-size: 1em;
+
+    @media #{$large-up} {
+      @include grid-column(1);
+    }
+  }
+
+  .m-company--#{$information-name} {
+    @include grid-column($columns: 10, $last-column: true);
+    margin-left: 0;
+    text-align:  left;
+
+    @media #{$large-up} {
+      @include grid-column($columns: 11, $last-column: true);
+    }
+  }
+
+  @if $children-names != null {
+    .m-company--#{$children-names} {
+      display:      inline-block;
+      margin-right: 0.3em;
+      &::After { content: ' - '}
+      &:last-child::After { content: ''; }
+    }
+  }
+}
+
+.m-companies {
+  @include grid-row();
+}
+
+.m-company {
+  @include grid-column(12);
+  @include panel($bg: $secondary-background);
+  @include company-information(employees);
+  @include company-information(locations);
+  @include company-information(technologies, technology);
+  @include company-information(types, type);
+  text-align: center;
+
+  @media #{$medium-up} {
+    @include grid-column(6);
+    &:nth-child(odd) {
+      width:        48%;
+      margin-right: 2%;
+    }
+  }
+
+  @media #{$large-up} {
+    h2.m-company--title {
+      text-align: left;
+    }
+  }
+}
+
+h2.m-company--title {
+  font-variant:  small-caps;
+  margin-bottom: 0.8em;
+}

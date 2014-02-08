@@ -4,3 +4,5 @@
 /elasticsearch/kibana/
 /node_modules
 /public
+npm-debug.log
+.env

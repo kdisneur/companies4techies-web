@@ -1,0 +1,15 @@
+@import './_variables';
+@import 'compass';
+@import 'compass/reset';
+@import 'font-awesome/scss/font-awesome';
+@import 'foundation/scss/foundation';
+
+@import './_companies';
+@import './_fullsearch';
+@import './_highlight';
+@import './_menu';
+@import './_reasons';
+
+body {
+  background: $primary-background;
+}

@@ -3,7 +3,7 @@
   "website" : "http://www.annva.fr/",
   "technologies" : [],
   "employees" : "between_1_and_5",
-  "type" : "software",
+  "types" : ["software"],
   "created_at": "2014/02/01",
   "locations" : [
      {

@@ -1,7 +1,7 @@
 {
   "name" : "no parking",
   "website" : "http://www.noparking.net/",
-  "type" : ["software_as_a_service", "webagency"],
+  "types" : ["software_as_a_service", "webagency"],
   "technologies" : ["asp", "php", "mysql", "postgresql"],
   "created_at": "2014/02/05",
   "locations" : [

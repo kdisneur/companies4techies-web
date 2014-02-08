@@ -3,7 +3,7 @@
   "website" : "http://critizr.com/",
   "technologies" : ["rubyonrails"],
   "employees" : "between_5_and_10",
-  "type" : "software_as_a_service",
+  "types" : ["software_as_a_service"],
   "created_at": "2014/02/05",
   "locations" : [
     {
