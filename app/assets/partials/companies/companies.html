@@ -1,20 +1,27 @@
 <div class="m-company" ng-repeat="company in companies" data-equalizer-watch>
   <h2 class="m-company--title"><a href="{{company.website}}">{{company.name}}</a></h2>
+
   <p class="m-company--employees--title"><i class="fa fa-users" title="employees"></i></p>
   <p class="m-company--employees" ng-if="company.employees">{{company.employees}}</p>
   <p class="m-company--employees" ng-if="!company.employees">no employees count</p>
-  <p class="m-company--type--title"><i class="fa fa-briefcase" title="type"></i></p>
-  <p class="m-company--type" ng-if="company.type">{{ company.type }}</p>
-  <p class="m-company--type" ng-if="!company.type">no company type</p>
+
+  <p class="m-company--types--title"><i class="fa fa-briefcase" title="type"></i></p>
+  <ul class="m-company--types">
+    <li class="m-company--type" ng-if="!company.types.length">no company type</li>
+    <li class="m-company--type" ng-repeat="type in company.types">{{ type }}</li>
+  </ul>
+
   <p class="m-company--technologies--title"><i class="fa fa-rocket" title="technologies"></i></p>
   <ul class="m-company--technologies">
-    <li ng-hide="company.technologies.length">No technology informations</li>
+    <li ng-if="!company.technologies.length">No technology informations</li>
     <li class="m-company--technology" ng-repeat="technology in company.technologies">
       <a href="#!/companies-using-{{technology}}">{{technology}}</a>
     </li>
   </ul>
+
   <p class="m-company--locations--title"><i class="fa fa-home" title="locations"></i></p>
   <ul class="m-company--locations">
+    <li ng-if="!company.locations.length">No locations</li>
     <li class="m-company--location" ng-repeat="location in company.locations">
       {{ location.city }}, {{ location.country }}
     </li>
