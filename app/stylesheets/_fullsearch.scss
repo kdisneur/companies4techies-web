@@ -7,9 +7,9 @@
 }
 
 .m-fullsearch--field {
-  @include grid-column(10);
+  @include grid-column($columns: 8, $offset: 1, $collapse: true);
 }
 
 .m-fullsearch--button {
-  @include grid-column(2);
+  @include grid-column($columns: 2, $collapse: true);
 }

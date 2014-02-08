@@ -1,3 +1,9 @@
+.m-reasons-wrapper {
+  @media #{$small-only} {
+    display: none;
+  }
+}
+
 .m-reasons--title {
   font-size:    2em;
   font-variant: small-caps;

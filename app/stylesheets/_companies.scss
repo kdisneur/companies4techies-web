@@ -1,12 +1,20 @@
 @mixin company-information($information-name, $children-names: null) {
   .m-company--#{$information-name}--title {
-    @include grid-column(1);
+    @include grid-column(2);
     font-size: 1em;
+
+    @media #{$large-up} {
+      @include grid-column(1);
+    }
   }
 
   .m-company--#{$information-name} {
-    @include grid-column(11);
+    @include grid-column($columns: 10, $last-column: true);
     margin-left: 0;
+
+    @media #{$large-up} {
+      @include grid-column($columns: 11, $last-column: true);
+    }
   }
 
   @if $children-names != null {
@@ -24,14 +32,29 @@
 }
 
 .m-company {
+  @media #{$small-only} {
+    @include grid-column(12);
+    h2.m-company--title {
+      text-align: center;
+    }
+  }
+
   @include grid-column(6);
   @include panel($bg: $secondary-background);
   @include company-information(employees);
   @include company-information(locations);
   @include company-information(technologies, technology);
   @include company-information(types, type);
+
+  @media #{$medium-up} {
+    &:nth-child(odd) {
+      width:        48%;
+      margin-right: 2%;
+    }
+  }
 }
 
-.m-company--title {
-  font-variant: small-caps;
+h2.m-company--title {
+  font-variant:  small-caps;
+  margin-bottom: 0.8em;
 }

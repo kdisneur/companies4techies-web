@@ -1,2 +1,13 @@
 $topbar-bg-color: $secondary-background !default;
 $topbar-height: 60px !default;
+
+.top-bar .name h1 a.m-menu--title {
+  background:      url('/images/tekusage.png') no-repeat;
+  background-size: 100%;
+  display:         inline-block;
+  height:          50px;
+  margin-left:     10px;
+  margin-top:      10px;
+  text-indent:     -3000px;
+  width:           150px;
+}

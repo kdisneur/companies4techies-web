@@ -8,7 +8,13 @@ WordModificationDirective = function(WordModificationService) {
         first     = word_list.shift();
         word_list.push(first);
 
+        $(element).removeClass('animated fadeOutDown');
         scope.wordModification = first;
+        $(element).addClass('animated fadeInDown');
+        $(element).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+          $(element).removeClass('animated fadeInDown');
+          $(element).addClass('animated fadeOutDown');
+        });
       }
       WordModificationService.onWordModification(scope, updateWord);
       updateWord();
