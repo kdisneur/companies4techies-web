@@ -1,7 +1,7 @@
 {
   "name" : "limpidius",
   "website" : "http://www.limpidius.com",
-  "type" : "software",
+  "types" : ["software"],
   "technologies" : ["node.js"],
   "employees" : "between_1_and_5",
   "created_at": "2014/02/01",

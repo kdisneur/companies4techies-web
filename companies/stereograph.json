@@ -1,7 +1,7 @@
 {
   "name" : "stereograph",
   "website" : "http://www.stereograph.fr/",
-  "type" : "synthetic_images_agency",
+  "types" : ["synthetic_images_agency"],
   "technologies" : [],
   "employees" : "between_20_and_50",
   "created_at": "2014/02/05",

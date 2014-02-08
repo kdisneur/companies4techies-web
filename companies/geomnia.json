@@ -1,7 +1,7 @@
 {
   "name" : "Geomnia",
   "website" : "http://www.geomnia.eu/",
-  "type" : "software",
+  "types" : ["software"],
   "created_at": "2014/02/01",
   "locations" : [
     {

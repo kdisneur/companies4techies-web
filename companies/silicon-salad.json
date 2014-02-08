@@ -3,7 +3,7 @@
   "technologies" : ["rubyonrails", "sass", "jquery", "coffeescript", "elasticsearch", "mysql"],
   "website" : "http://www.siliconsalad.com",
   "employees" : "between_10_and_20",
-  "type" : "webagency",
+  "types" : ["webagency"],
   "remote" : false,
   "part_time": false,
   "freelance": true,

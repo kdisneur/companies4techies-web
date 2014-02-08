@@ -2,7 +2,7 @@
   "name" : "Colis Web",
   "website" : "http://www.colisweb.com/",
   "technologies" : ["magento", "prestashop"],
-  "type" : "service",
+  "types" : ["service"],
   "created_at": "2014/02/05",
   "locations" : [
     {

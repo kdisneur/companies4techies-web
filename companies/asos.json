@@ -3,7 +3,7 @@
   "website" : "http://www.asos.fr/",
   "technologies" : [".net", "tfs", "sql server"],
   "employees" : "more_than_100",
-  "type" : "ecommerce",
+  "types" : ["ecommerce"],
   "created_at": "2014/02/01",
   "locations" : [
      {

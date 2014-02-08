@@ -1,7 +1,7 @@
 {
   "name" : "LCVA",
   "website" : "http://www.lcva.fr/",
-  "type" : "webagency",
+  "types" : ["webagency"],
   "technologies" : ["prestashop", "magento", "wordpress"],
   "employees" : "less_than_5",
   "created_at": "2014/02/01",

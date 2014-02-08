@@ -1,7 +1,7 @@
 {
   "name" : "Koolicar",
   "website" : "http://www.koolicar.com",
-  "type" : "software_as_a_service",
+  "types" : ["software_as_a_service"],
   "technologies" : ["rubyonrails", "angularjs", "sass", "postgresql"],
   "employees" : "between_5_and_10",
   "remote" : false,

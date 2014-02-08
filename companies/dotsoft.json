@@ -2,7 +2,7 @@
   "name" : "DotSoft",
   "website" : "http://www.dotsoft.fr/",
   "employees" : "between_20_and_50",
-  "type" : "software",
+  "types" : ["software"],
   "created_at": "2014/02/05",
   "locations" : [
     {
