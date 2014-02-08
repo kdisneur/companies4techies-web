@@ -1,5 +1,7 @@
 <div class="m-company" ng-repeat="company in companies" data-equalizer-watch>
-  <h2 class="m-company--title"><a href="{{company.website}}">{{company.name}}</a></h2>
+  <h2 class="m-company--title">
+    <a href="{{company.website}}" analytics-event="visit {{company.name}}">{{company.name}}</a>
+  </h2>
 
   <p class="m-company--employees--title"><i class="fa fa-users" title="employees"></i></p>
   <p class="m-company--employees" ng-if="company.employees">{{company.employees}}</p>
@@ -15,7 +17,7 @@
   <ul class="m-company--technologies">
     <li ng-if="!company.technologies.length">No technology informations</li>
     <li class="m-company--technology" ng-repeat="technology in company.technologies">
-      <a href="#!/companies-using-{{technology}}">{{technology}}</a>
+      <a href="#!/companies-using-{{technology}}" analytics-event="filter by technology {{technology}}">{{technology}}</a>
     </li>
   </ul>
 
