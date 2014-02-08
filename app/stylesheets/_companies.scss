@@ -11,6 +11,7 @@
   .m-company--#{$information-name} {
     @include grid-column($columns: 10, $last-column: true);
     margin-left: 0;
+    text-align:  left;
 
     @media #{$large-up} {
       @include grid-column($columns: 11, $last-column: true);
@@ -32,24 +33,25 @@
 }
 
 .m-company {
-  @media #{$small-only} {
-    @include grid-column(12);
-    h2.m-company--title {
-      text-align: center;
-    }
-  }
-
-  @include grid-column(6);
+  @include grid-column(12);
   @include panel($bg: $secondary-background);
   @include company-information(employees);
   @include company-information(locations);
   @include company-information(technologies, technology);
   @include company-information(types, type);
+  text-align: center;
 
   @media #{$medium-up} {
+    @include grid-column(6);
     &:nth-child(odd) {
       width:        48%;
       margin-right: 2%;
+    }
+  }
+
+  @media #{$large-up} {
+    h2.m-company--title {
+      text-align: left;
     }
   }
 }

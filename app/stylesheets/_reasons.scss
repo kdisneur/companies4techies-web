@@ -22,7 +22,8 @@
   background:      $secondary-background;
   font-size:       0.8em;
   list-style-type: none;
-  margin:          55px;
+  margin:          15px;
+  margin-bottom:   55px;
   height:          220px;
   text-align:      center;
   width:           222px;
@@ -31,5 +32,9 @@
     color:     $primary-color;
     font-size: 2.5em;
     margin:    0.8em;
+  }
+
+  @media #{$large-up} {
+    margin: 55px;
   }
 }
