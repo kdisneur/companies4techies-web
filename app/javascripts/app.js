@@ -1,1 +1,1 @@
-var app = angular.module('tekusage', ['ngRoute']);
+var app = angular.module('tekusage', ['ngRoute', 'angulartics', 'angulartics.google.analytics']);
