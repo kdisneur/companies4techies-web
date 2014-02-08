@@ -2,7 +2,7 @@
   "name" : "Compario",
   "website" : "http://www.compario.com/",
   "technologies" : ["sql server", "sharepoint", "magento"],
-  "types" : [["software", "communication"]],
+  "types" : ["software", "communication"],
   "created_at": "2014/02/05",
   "locations" : [
     {

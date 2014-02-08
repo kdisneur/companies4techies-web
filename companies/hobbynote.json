@@ -2,7 +2,7 @@
   "name" : "Hobbynote",
   "website" : "http://www.hobbynote.com/",
   "employees" : "between_5_and_10",
-  "type" : "webagency",
+  "types" : ["webagency"],
   "technologies" : ["symfony", "javascript"],
   "created_at" : "2014/02/07",
   "locations" : [
