@@ -3,7 +3,7 @@
   "website" : "http://www.limpidius.com",
   "types" : ["software"],
   "technologies" : ["node.js"],
-  "employees" : "between_1_and_5",
+  "employees" : "less_than_5",
   "created_at": "2014/02/01",
   "locations" : [
     {

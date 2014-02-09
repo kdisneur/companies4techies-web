@@ -29,6 +29,7 @@ window.locales['en'] = {
       communication: "Communication",
       marketing: "Marketing",
       social_gaming: "Social gaming",
+      training: "Training",
       unknown: "Unknown company type"
     }
   },

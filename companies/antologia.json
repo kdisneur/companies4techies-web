@@ -2,7 +2,7 @@
   "name" : "antologia",
   "website" : "http://www.antologia.fr/",
   "technologies" : ["sharepoint", "sql server"],
-  "employees" : "between_1_and_5",
+  "employees" : "less_than_5",
   "types" : ["webagency"],
   "created_at": "2014/02/01",
   "locations" : [
