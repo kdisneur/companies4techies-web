@@ -1,9 +1,6 @@
 # ruby synonyms
 rails, ror, rubyonrails, ruby on rails, sinatra => ruby
-rails
-ror
-rubyonrails
-ruby on rails
+rails, ror, ruby on rails, rubyonrails
 sinatra
 
 # php synonyms
