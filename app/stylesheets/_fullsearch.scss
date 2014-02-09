@@ -1,5 +1,12 @@
 .m-fullsearch {
   @include grid-row();
+  input, a {
+    height:      3rem;
+    line-height: 2.8rem;
+    @media #{$medium-up} {
+      font-size: 1.5em;
+    }
+  }
 }
 
 .m-fullsearch--form {
@@ -12,4 +19,8 @@
 
 .m-fullsearch--button {
   @include grid-column($columns: 2, $collapse: true);
+  a {
+    @extend .postfix;
+    @extend .button;
+  }
 }

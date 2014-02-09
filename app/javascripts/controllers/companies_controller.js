@@ -1,9 +1,18 @@
-CompaniesListController = function($scope, Company, queryString) {
-  $scope.companies = Company.search(queryString, function(companies) {
-    $scope.$apply(function() {
-      $scope.companies = companies;
+CompaniesListController = function($scope, CompanyService, MenuService, queryString) {
+  $scope.companies = [];
+  $scope.page      = 1;
+  $scope.nextPage  = function() {
+    $scope.fetchingData = true;
+    CompanyService.search(queryString, $scope.page, function(companies) {
+      if (companies.length == 0) return;
+
+      $scope.$apply(function() {
+        _.each(companies, function(company) { $scope.companies.push(company) });
+        $scope.fetchingData = false;
+        $scope.page++;
+      });
     });
-  });
+  };
 
   $scope.companiesPartialName = function() {
     template_name = ($scope.companies && $scope.companies.length > 0) ? 'companies' : 'empty'
@@ -23,6 +32,13 @@ CompaniesListController = function($scope, Company, queryString) {
 
     window.location.href = url;
   };
+
+  init = function() {
+    MenuService.showSearch();
+    $scope.nextPage();
+  };
+
+  init();
 };
 
-CompaniesListController.$inject = ['$scope', 'Company', 'queryString'];
+CompaniesListController.$inject = ['$scope', 'CompanyService', 'MenuService', 'queryString'];

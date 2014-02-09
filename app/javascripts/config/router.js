@@ -36,10 +36,17 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
     }
   });
 
-
   $routeProvider.when('/', {
     templateUrl: 'partials/home/index.html',
     controller:  HomeController
+  });
+
+  $routeProvider.when('/search', {
+    templateUrl: 'partials/companies/list.html',
+    controller:  CompaniesListController,
+    resolve: {
+      queryString: function($route) { return { fulltext: $route.current.params.q }; }
+    }
   });
 
   $routeProvider.when('/404', {

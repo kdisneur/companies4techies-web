@@ -16,12 +16,18 @@
     <!--[if lte IE 9]>
       <p class="m-browser-outdated">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif] -->
-    <nav class="top-bar" data-topbar>
+    <nav class="top-bar" data-topbar headroom tolerance="5" offset="100" classes='{"initial":"animated", "pinned":"slideInDown", "unpinned":"slideOutUp"}' ng-controller="MenuController">
       <ul class="title-area">
-        <li class="name">
-          <h1><a href="#!/" class="m-menu--title">tekusage</a></h1>
-        </li>
+        <li class="name"><h1><a href="#!/" class="m-menu--title">tekusage</a></h1></li>
+        <li class="toggle-topbar menu-icon"><a href="#" translate="menu.menu"></a></li>
       </ul>
+      <section class="top-bar-section">
+        <ul class="m-menu--search contain-to-grid" ng-if="showSearch()">
+          <li class="has-form">
+            <div ng-include="'partials/search.html'"></div>
+          </li>
+        </ul>
+      </section>
     </nav>
     <div ng-view></div>
     <script src="/javascripts/vendor.js"></script>

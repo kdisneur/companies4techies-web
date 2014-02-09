@@ -28,6 +28,7 @@ window.locales['en'] = {
       platform_as_a_service: "Platform As A Service",
       communication: "Communication",
       marketing: "Marketing",
+      networl: "Network",
       social_gaming: "Social gaming",
       training: "Training",
       unknown: "Unknown company type"
@@ -39,6 +40,13 @@ window.locales['en'] = {
       suffix: "company of your dreams."
     }
   },
+  menu: {
+    menu: "Menu",
+    search: {
+      button: "@:search.button",
+      placeholder: "@:search.placeholder"
+    }
+  },
   reasons: {
     global: "You can find companies using your preferred technologies around the world.",
     opensource: 'All the website and the companies database is open source and available on <a href="https://github.com/kdisneur/tekusage">Github</a>',
@@ -46,6 +54,7 @@ window.locales['en'] = {
     title: "Why use Tekusage?"
   },
   search: {
-    button: "search"
+    button: "search",
+    placeholder: "enter your favorite technology"
   }
 };

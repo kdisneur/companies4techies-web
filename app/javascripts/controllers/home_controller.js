@@ -1,6 +1,6 @@
-HomeController = function($scope, Company) {
+HomeController = function($scope, CompanyService, MenuService) {
   $scope.technologies = ['ruby', 'node.js', 'python', '.net', 'java'];
-  $scope.companies    = Company.search(undefined, function(companies) {
+  $scope.companies    = CompanyService.search(undefined, 1, function(companies) {
     $scope.$apply(function() {
       $scope.companies = companies;
     });
@@ -13,9 +13,10 @@ HomeController = function($scope, Company) {
 
   var init = function() {
     new WOW().init();
+    MenuService.hideSearch();
   };
 
   init();
 };
 
-HomeController.$inject = ['$scope', 'Company'];
+HomeController.$inject = ['$scope', 'CompanyService', 'MenuService'];
