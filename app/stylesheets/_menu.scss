@@ -1,5 +1,17 @@
-$topbar-bg-color: $secondary-background !default;
-$topbar-height: 60px !default;
+.top-bar {
+  position: fixed;
+  top:      0;
+  width:    100%;
+  z-index:  100;
+}
+
+.m-menu--search .has-form {
+  float: none;
+}
+
+.top-bar .title-area {
+  z-index: 2;
+}
 
 .top-bar .name h1 a.m-menu--title {
   background:      url('/images/tekusage.png') no-repeat;
@@ -10,4 +22,14 @@ $topbar-height: 60px !default;
   margin-top:      10px;
   text-indent:     -3000px;
   width:           150px;
+}
+
+.top-bar input, .top-bar .button {
+  height:      2.6rem;
+  line-height: 1.8rem;
+  margin-top:  2px;
+}
+
+.top-bar input {
+  font-size :1em;
 }

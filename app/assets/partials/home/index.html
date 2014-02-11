@@ -5,14 +5,7 @@
     {{'highlight.explanation.suffix' | translate}}
   </p>
 </div>
-<div class="m-fullsearch">
-  <div class="m-fullsearch--field">
-    <input type="text" >
-  </div>
-  <div class="m-fullsearch--button">
-    <a href="#" class="button postfix" translate="search.button"></a>
-  </div>
-</div>
+<div ng-include="'partials/search.html'"></div>
 <div class="m-reasons-wrapper">
   <h2 class="m-reasons--title" translate="reasons.title"></h2>
   <ul class="m-reasons">
@@ -30,6 +23,6 @@
     </li>
   </ul>
 </div>
-<div class="m-companies">
-  <div ng-include="companiesPartialName()" data-equalizer></div>
+<div class="m-companies" data-equalizer>
+  <div ng-include="companiesPartialName()"></div>
 </div>

@@ -30,6 +30,7 @@
 
 .m-companies {
   @include grid-row();
+  margin-top: 50px;
 }
 
 .m-company {

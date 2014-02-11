@@ -1,31 +1,33 @@
-<div class="m-company" ng-repeat="company in companies" data-equalizer-watch>
-  <h2 class="m-company--title">
-    <a href="{{company.website}}" analytics-event="visit {{company.name}}">{{company.name}}</a>
-  </h2>
+<div infinite-scroll="nextPage()" infinite-scroll-disabled="fetchingData" infinite-scroll-distance="3">
+  <div class="m-company" ng-repeat="company in companies" data-equalizer-watch>
+    <h2 class="m-company--title">
+      <a href="{{company.website}}" analytics-event="visit {{company.name}}">{{company.name}}</a>
+    </h2>
 
-  <p class="m-company--employees--title"><i class="fa fa-users" title="employees"></i></p>
-  <p class="m-company--employees" ng-if="company.employees" translate="company.employees.{{company.employees}}"></p>
-  <p class="m-company--employees" ng-if="!company.employees" translate="company.employees.unknown"></p>
+    <p class="m-company--employees--title"><i class="fa fa-users" title="employees"></i></p>
+    <p class="m-company--employees" ng-if="company.employees" translate="company.employees.{{company.employees}}"></p>
+    <p class="m-company--employees" ng-if="!company.employees" translate="company.employees.unknown"></p>
 
-  <p class="m-company--types--title"><i class="fa fa-briefcase" title="type"></i></p>
-  <ul class="m-company--types">
-    <li class="m-company--type" ng-if="!company.types.length" translate="company.types.unknown"></li>
-    <li class="m-company--type" ng-repeat="type in company.types" translate="company.types.{{type}}"></li>
-  </ul>
+    <p class="m-company--types--title"><i class="fa fa-briefcase" title="type"></i></p>
+    <ul class="m-company--types">
+      <li class="m-company--type" ng-if="!company.types.length" translate="company.types.unknown"></li>
+      <li class="m-company--type" ng-repeat="type in company.types" translate="company.types.{{type}}"></li>
+    </ul>
 
-  <p class="m-company--technologies--title"><i class="fa fa-rocket" title="technologies"></i></p>
-  <ul class="m-company--technologies">
-    <li ng-if="!company.technologies.length" translate="company.technologies.unknown"></li>
-    <li class="m-company--technology" ng-repeat="technology in company.technologies">
-      <a href="#!/companies-using-{{technology}}" analytics-event="filter by technology {{technology}}">{{technology}}</a>
-    </li>
-  </ul>
+    <p class="m-company--technologies--title"><i class="fa fa-rocket" title="technologies"></i></p>
+    <ul class="m-company--technologies">
+      <li ng-if="!company.technologies.length" translate="company.technologies.unknown"></li>
+      <li class="m-company--technology" ng-repeat="technology in company.technologies">
+        <a href="#!/companies-using-{{technology}}" analytics-event="filter by technology {{technology}}">{{technology}}</a>
+      </li>
+    </ul>
 
-  <p class="m-company--locations--title"><i class="fa fa-home" title="locations"></i></p>
-  <ul class="m-company--locations">
-    <li ng-if="!company.locations.length" translate="company.locations.unknown"></li>
-    <li class="m-company--location" ng-repeat="location in company.locations">
-      {{ location.city }}, {{ location.country }}
-    </li>
-  </ul>
+    <p class="m-company--locations--title"><i class="fa fa-home" title="locations"></i></p>
+    <ul class="m-company--locations">
+      <li ng-if="!company.locations.length" translate="company.locations.unknown"></li>
+      <li class="m-company--location" ng-repeat="location in company.locations">
+        {{ location.city }}, {{ location.country }}
+      </li>
+    </ul>
+  </div>
 </div>

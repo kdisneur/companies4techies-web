@@ -11,5 +11,6 @@
 @import './_reasons';
 
 body {
-  background: $primary-background;
+  background:  $primary-background;
+  padding-top: $topbar-height;
 }
