@@ -1,4 +1,11 @@
 CompaniesListController = function($scope, CompanyService, MenuService, queryString) {
+  $scope.map       = function() {
+    var boundbox = new google.maps.LatLngBounds();
+    _.each($scope.locations(), function(location) { boundbox.extend(new google.maps.LatLng(location.latitude, location.longitude)) });
+    point = boundbox.getCenter();
+    return { latitude: point.lat(), longitude: point.lng() };
+  };
+
   $scope.companies = [];
   $scope.page      = 1;
   $scope.nextPage  = function() {
@@ -12,6 +19,19 @@ CompaniesListController = function($scope, CompanyService, MenuService, queryStr
         $scope.page++;
       });
     });
+  };
+
+  $scope.locations = function() {
+    return _.reduce($scope.companies, function(locations, company) {
+      return _.flatten(_.zip(locations, _.map(company.locations, function(location) {
+        return {
+          latitude:     location.coordinates.lat,
+          longitude:    location.coordinates.lon,
+          company_id:   company._id,
+          company_name: company.name
+        };
+      })));
+    }, []);
   };
 
   $scope.companiesPartialName = function() {

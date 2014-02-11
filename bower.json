@@ -19,6 +19,7 @@
     "angular-route": "~ 1.2.10",
     "angular-translate" : "~ 1.1.1",
     "angulartics": "~ 0.8.7",
+    "angular-google-maps": "*",
     "animate.css": "~ 3.0.0",
     "elastic.js": "~ 1.1.1",
     "headroom.js": "~ 0.4.0",

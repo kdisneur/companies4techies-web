@@ -1,0 +1,9 @@
+.angular-google-map-container { height: $maps-height; }
+
+.m-maps {
+  left:     0;
+  position: absolute;
+  top:      $topbar-height;
+  width:    100%;
+}
+

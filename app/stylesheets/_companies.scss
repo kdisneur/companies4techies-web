@@ -33,6 +33,10 @@
   margin-top: 50px;
 }
 
+.m-companies--wrapper {
+  margin-top: $maps-height;
+}
+
 .m-company {
   @include grid-column(12);
   @include panel($bg: $secondary-background);
