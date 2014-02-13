@@ -53,7 +53,7 @@ var CompanyService = function() {
     types:   'company',
     search: function(queryString, page, callback) {
       var size = 25;
-      new elasticsearch.Client({ host: this.host, log: 'trace'}).search({
+      new elasticsearch.Client({ host: this.host}).search({
         index: this.indices,
         type:  this.types,
         body:  { query: query(queryString) },

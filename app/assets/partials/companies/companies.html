@@ -1,5 +1,5 @@
-<google-map class="m-maps" center="map()" zoom="8">
-  <marker models="locations()" coords="'self'" events="{ click: goToCompany(location.company_id)}" ng-repeat="location in locations" data-equalizer-watch></marker>
+<google-map class="m-maps" center="map.center" zoom="map.zoom" refresh="true" options="map.options" draggable="true">
+  <markers fit="true" models="locations" coords="'self'" doCluster="true" icon="'icon'" click="'goToCompany'"></markers>
 </google-map>
 <div class="m-companies--wrapper" infinite-scroll="nextPage()" infinite-scroll-disabled="fetchingData" infinite-scroll-distance="3">
   <div ng-repeat="company in companies" ng-include="'partials/companies/company.html'"></div>
